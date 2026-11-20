@@ -7,17 +7,78 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Refresh Status" 
+        <Button Content="Get Status" 
                 HorizontalAlignment="Left" 
                 Margin="38,23,0,0" 
                 VerticalAlignment="Top"
                 Click="Button_Click"
                 Name="RefreshBttn"/>
 
-        <Label Name="TFLInfo"
-               Content="This is a test"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center"/>
+        <Label Name="Bakerloo"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,57,0,0"/>
+
+        <Label Name="Central"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,77,0,0"/>
+
+        <Label Name="Circle"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,97,0,0"/>
+
+        <Label Name="District"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,117,0,0"/>
+
+        <Label Name="HammersmithAndCity"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,137,0,0"/>
+
+        <Label Name="Jubilee"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,157,0,0"/>
+
+        <Label Name="Metropolitan"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,177,0,0"/>
+
+        <Label Name="Northern"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,197,0,0"/>
+
+        <Label Name="Piccadilly"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,217,0,0"/>
+
+        <Label Name="Victoria"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,237,0,0"/>
+
+        <Label Name="WaterlooAndCity"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,257,0,0"/>
 
     </Grid>
 </Window>
