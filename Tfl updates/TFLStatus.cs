@@ -8,9 +8,9 @@ using System.Windows.Media.Animation;
 
 namespace TFLStatusWPF.Tfl_updates
 {
-    public static class TFLStatus
+    public static class TFLTubeInfo
     {
-        public static async Task<List<TubeLine>?> TFL() // When using async use task instead of void.
+        public static async Task<List<TubeLine>?> TFLTubeNames() // When using async use task instead of void.
         {
             using var client = new HttpClient();
             client.DefaultRequestHeaders.Add("User-Agent", "CSharpApp");
@@ -33,7 +33,48 @@ namespace TFLStatusWPF.Tfl_updates
             }
         }
 
+        public static async Task<List<string>?> TFLTubeStatus()
+        {
+            using var client = new HttpClient();
+            client.DefaultRequestHeaders.Add("User-Agent", "CSharpApp");
+
+            string url = "https://api.tfl.gov.uk/Line/Mode/tube/Status";
+
+            try
+            {
+               
+
+                // Fetch and automatically deserialize the JSON into C# objects
+                var lines = await client.GetFromJsonAsync<List<TubeLine>>(url);
+
+                var statuses = new List<string>();
+
+                if (lines != null)
+                {
+                    foreach (var line in lines)
+                    {
+                        if (line.LineStatuses != null && line.LineStatuses.Any())
+                        {
+                            var descriptions = line.LineStatuses
+                                .Select(s => s.StatusSeverityDescription)
+                                .Where(desc => !string.IsNullOrEmpty(desc));
+
+                            statuses.Add($"{line.Name}: {string.Join(", ", descriptions)}");
+                        }
+                    }
+                }
+                return statuses;
+            }
+            catch (Exception ex)
+            {
+                //todo show error
+                return null;
+            }
+        }
+
     }
+
+    
 
     public class TubeLine
     {

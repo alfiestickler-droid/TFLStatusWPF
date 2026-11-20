@@ -26,7 +26,8 @@ namespace TFLStatusWPF
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            List<TubeLine>? tubeLines = await TFLStatus.TFL();
+            List<TubeLine>? tubeLines = await TFLTubeInfo.TFLTubeNames();
+            List<string>? lineStatus = await TFLTubeInfo.TFLTubeStatus();
 
             Bakerloo.Content = tubeLines[0].Name;
             Central.Content = tubeLines[1].Name;
@@ -39,6 +40,9 @@ namespace TFLStatusWPF
             Piccadilly.Content = tubeLines[8].Name;
             Victoria.Content = tubeLines[9].Name;
             WaterlooAndCity.Content = tubeLines[10].Name;
+
+            BakerlooStatus.Content = lineStatus[0];
+
 
         }
     }

@@ -80,5 +80,12 @@
                VerticalAlignment="Top" 
                Margin="38,257,0,0"/>
 
+
+        <Label Name="BakerlooStatus"
+               Content=""
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" 
+               Margin="38,57,0,0"/>
+
     </Grid>
 </Window>
