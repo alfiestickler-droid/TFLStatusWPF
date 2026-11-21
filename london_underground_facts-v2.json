@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "category": "History & Origins",
+    "title": "World's first underground railway",
+    "fact": "The network opened on 10 January 1863 as the Metropolitan Railway, running between Paddington and Farringdon."
+  },
+  {
+    "id": 2,
+    "category": "History & Origins",
+    "title": "Steam-powered beginnings",
+    "fact": "The earliest Tube journeys used steam locomotives pulling gas-lit wooden carriages."
+  },
+  {
+    "id": 3,
+    "category": "History & Origins",
+    "title": "Cut-and-cover tunnels",
+    "fact": "Early lines were built by digging up streets, laying tracks, and roofing them over, rather than boring deep underground."
+  },
+  {
+    "id": 4,
+    "category": "History & Origins",
+    "title": "Origin of \"The Tube\"",
+    "fact": "The nickname began around 1890 when the City and South London Railway pioneered deep-level circular tunnels."
+  },
+  {
+    "id": 5,
+    "category": "History & Origins",
+    "title": "The iconic map",
+    "fact": "Harry Beck designed the famous schematic Tube map in 1931 (published in 1933) based on electrical circuit diagrams rather than strict geography."
+  },
+  {
+    "id": 6,
+    "category": "History & Origins",
+    "title": "Bespoke typography",
+    "fact": "Edward Johnston created the signature sans-serif typeface in 1916, which is still used across the network."
+  },
+  {
+    "id": 7,
+    "category": "History & Origins",
+    "title": "Royal passenger",
+    "fact": "Queen Elizabeth II became the first reigning monarch to travel on the Underground when she opened the Victoria line in 1969."
+  },
+  {
+    "id": 8,
+    "category": "History & Origins",
+    "title": "Flat-rate tuppence fares",
+    "fact": "When the Central line opened in 1900, every journey cost a flat two pence (\"twopenny tube\") until 1907."
+  },
+  {
+    "id": 9,
+    "category": "History & Origins",
+    "title": "King's Cross fire aftermath",
+    "fact": "Smoking was permanently banned across all trains and stations in 1987 following the tragic King's Cross fire."
+  },
+  {
+    "id": 10,
+    "category": "History & Origins",
+    "title": "Alcohol ban",
+    "fact": "Drinking alcohol or carrying open containers on the network was officially banned in June 2008."
+  },
+  {
+    "id": 11,
+    "category": "Records & Network Scale",
+    "title": "Mostly above ground",
+    "fact": "Despite its name, 55% of the London Underground actually runs above ground, with only 45% in tunnels."
+  },
+  {
+    "id": 12,
+    "category": "Records & Network Scale",
+    "title": "Network length",
+    "fact": "The network spans roughly 250 miles (402 km) of track across 11 lines and 272 stations."
+  },
+  {
+    "id": 13,
+    "category": "Records & Network Scale",
+    "title": "Fully underground lines",
+    "fact": "Only two lines—the Waterloo & City line and the Victoria line—operate entirely underground."
+  },
+  {
+    "id": 14,
+    "category": "Records & Network Scale",
+    "title": "Deepest station",
+    "fact": "Hampstead on the Northern line is the deepest station on the network at 58.5 metres (192 feet) below street level."
+  },
+  {
+    "id": 15,
+    "category": "Records & Network Scale",
+    "title": "Highest station",
+    "fact": "Amersham on the Metropolitan line sits 147 metres (482 feet) above sea level, making it the highest station."
+  },
+  {
+    "id": 16,
+    "category": "Records & Network Scale",
+    "title": "Longest single journey",
+    "fact": "You can travel 34 miles (54.5 km) without changing trains between West Ruislip and Epping on the Central line."
+  },
+  {
+    "id": 17,
+    "category": "Records & Network Scale",
+    "title": "Longest gap between stations",
+    "fact": "The Metropolitan line stretch between Chesham and Latimer covers 3.89 miles (6.3 km)."
+  },
+  {
+    "id": 18,
+    "category": "Records & Network Scale",
+    "title": "Shortest gap between stations",
+    "fact": "Leicester Square and Covent Garden on the Piccadilly line are just 260 metres apart, taking roughly 20 seconds."
+  },
+  {
+    "id": 19,
+    "category": "Records & Network Scale",
+    "title": "Most platforms",
+    "fact": "Baker Street holds the record for the most platforms at a single Underground station with 10."
+  },
+  {
+    "id": 20,
+    "category": "Records & Network Scale",
+    "title": "Most connected line",
+    "fact": "The Jubilee line is the only Tube line that connects with every other Underground line."
+  },
+  {
+    "id": 21,
+    "category": "Engineering & Infrastructure",
+    "title": "Average speed",
+    "fact": "Including station stops, Tube trains travel at an average speed of 20.5 mph (33 km/h)."
+  },
+  {
+    "id": 22,
+    "category": "Engineering & Infrastructure",
+    "title": "Top speed",
+    "fact": "Metropolitan line trains reach the highest speeds on the network, topping out at over 60 mph."
+  },
+  {
+    "id": 23,
+    "category": "Engineering & Infrastructure",
+    "title": "Four-rail electrical system",
+    "fact": "Unlike most railways that use three rails, the Underground uses a four-rail DC system to prevent stray electrical currents from corroding nearby water and gas pipes."
+  },
+  {
+    "id": 24,
+    "category": "Engineering & Infrastructure",
+    "title": "Pumping out water",
+    "fact": "Pumps remove over 47 million litres of groundwater from the Underground every day—enough to fill a leisure centre swimming pool every 15 minutes."
+  },
+  {
+    "id": 25,
+    "category": "Engineering & Infrastructure",
+    "title": "Medieval street curves",
+    "fact": "Tunnels beneath the City of London twist sharply because engineers built them directly underneath medieval streets to avoid paying compensation to building owners above."
+  },
+  {
+    "id": 26,
+    "category": "Engineering & Infrastructure",
+    "title": "Moving Big Ben",
+    "fact": "Excavating the Jubilee line extension at Westminster station caused Big Ben's clock tower to tilt by 35 millimetres."
+  },
+  {
+    "id": 27,
+    "category": "Engineering & Infrastructure",
+    "title": "Solar-powered bridge",
+    "fact": "Blackfriars station spans the River Thames and is covered in over 4,400 solar panels, making it the world's largest solar-powered bridge."
+  },
+  {
+    "id": 28,
+    "category": "Engineering & Infrastructure",
+    "title": "Longest escalators",
+    "fact": "Angel station has the longest escalators on the network, measuring 60 metres (197 feet) in length with a vertical rise of 27.5 metres."
+  },
+  {
+    "id": 29,
+    "category": "Engineering & Infrastructure",
+    "title": "Waterloo's escalator fleet",
+    "fact": "Waterloo station has more escalators than any other station on the network, operating 23 in total."
+  },
+  {
+    "id": 30,
+    "category": "Engineering & Infrastructure",
+    "title": "Bank's maze of exits",
+    "fact": "Bank station boasts 12 separate street exits."
+  },
+  {
+    "id": 31,
+    "category": "Wartime Secrets & Ghost Stations",
+    "title": "Blitz air-raid shelters",
+    "fact": "During the Second World War, up to 177,000 Londoners slept on Tube platforms each night to shelter from bombing raids."
+  },
+  {
+    "id": 32,
+    "category": "Wartime Secrets & Ghost Stations",
+    "title": "Secret aircraft factory",
+    "fact": "An unfinished two-mile stretch of the Central line between Leytonstone and Newbury Park was converted into a hidden Plessey fighter aircraft factory during WWII, complete with its own miniature railway."
+  },
+  {
+    "id": 33,
+    "category": "Wartime Secrets & Ghost Stations",
+    "title": "British Museum bunker",
+    "fact": "Priceless treasures from the British Museum, including the Elgin Marbles, were stored inside the closed Aldwych station and Piccadilly line tunnels during WWII."
+  },
+  {
+    "id": 34,
+    "category": "Wartime Secrets & Ghost Stations",
+    "title": "Churchill's war room",
+    "fact": "Down Street, a disused Piccadilly line station, served as a secret underground bunker for Winston Churchill and the Railway Executive Committee during the Blitz."
+  },
+  {
+    "id": 35,
+    "category": "Wartime Secrets & Ghost Stations",
+    "title": "Bletchley Park outstation",
+    "fact": "Stanmore station housed a secret outstation linked to the Bletchley Park codebreakers during WWII."
+  },
+  {
+    "id": 36,
+    "category": "Wartime Secrets & Ghost Stations",
+    "title": "Deep-level wartime shelters",
+    "fact": "Eight deep-level shelters were built beneath existing stations (including Chancery Lane and Clapham South), one of which later became a secure Cold War telephone exchange."
+  },
+  {
+    "id": 37,
+    "category": "Wartime Secrets & Ghost Stations",
+    "title": "Ghost stations",
+    "fact": "Around 40 abandoned or disused \"ghost\" stations sit beneath London, including Aldwych, Brompton Road, and British Museum."
+  },
+  {
+    "id": 38,
+    "category": "Wartime Secrets & Ghost Stations",
+    "title": "Cheshire salt mine archive",
+    "fact": "Transport for London stores over 175,000 historical artefacts 150 metres underground inside an active salt mine in Cheshire to protect them from humidity."
+  },
+  {
+    "id": 39,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Plague pit beneath Aldgate",
+    "fact": "Aldgate station was built directly over a 1665 Great Plague burial pit containing more than 1,000 bodies."
+  },
+  {
+    "id": 40,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "St. John's Wood wordplay",
+    "fact": "St. John's Wood is the only Tube station name that does not share a single letter with the word \"mackerel\"."
+  },
+  {
+    "id": 41,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Balham wordplay",
+    "fact": "Balham is the only station name that contains none of the letters in the word \"underground\"."
+  },
+  {
+    "id": 42,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Underground mice",
+    "fact": "An estimated half a million mice live in the tunnel network, surviving on dropped crumbs and skin flakes."
+  },
+  {
+    "id": 43,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "London's green space manager",
+    "fact": "Because so much of the network runs through leafy outer suburbs, TfL manages roughly 10% of all green spaces in Greater London."
+  },
+  {
+    "id": 44,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Trackside wildlife",
+    "fact": "Deer, bats, woodpeckers, sparrowhawks, slow worms, and great crested newts have all been officially recorded along outer Tube embankments."
+  },
+  {
+    "id": 45,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Tube mosquitoes",
+    "fact": "A distinct subspecies of mosquito (Culex pipiens molestus) evolved inside the warm tunnels, adapting to breed year-round in stagnant underground water."
+  },
+  {
+    "id": 46,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Origin of \"Mind the Gap\"",
+    "fact": "The famous warning originated on the Northern line in 1968 using a digital recording because platform layouts created wide gaps."
+  },
+  {
+    "id": 47,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "The Embankment recording",
+    "fact": "In 2013, TfL restored Oswald Laurence's original 1950s \"Mind the Gap\" recording exclusively at Embankment station so his widow could continue hearing his voice on the platform."
+  },
+  {
+    "id": 48,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Babies born on the Tube",
+    "fact": "Only a handful of babies have ever been born on the Underground; the first, Marie Cordery, was born at Elephant & Castle in 1924."
+  },
+  {
+    "id": 49,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "South of the river scarcity",
+    "fact": "Fewer than 10% of all London Underground stations are located south of the River Thames due to difficult waterlogged gravel and clay geology."
+  },
+  {
+    "id": 50,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Oyster and contactless pioneers",
+    "fact": "TfL launched the Oyster smartcard in 2003 and became the world's first public transport provider to accept contactless bank cards in 2014."
+  },
+  {
+    "id": 51,
+    "category": "Line-Specific Trivia",
+    "title": "The Waterloo & City nickname",
+    "fact": "Known affectionately by commuters as \"The Drain\", the Waterloo & City line has only two stations (Waterloo and Bank) and takes just four minutes end-to-end."
+  },
+  {
+    "id": 52,
+    "category": "Line-Specific Trivia",
+    "title": "Hidden crane at Waterloo",
+    "fact": "Until 1990, Waterloo & City line trains had to be lifted in and out of the tunnels individually using an Armstrong hydraulic crane because there was no track connection to the rest of the network."
+  },
+  {
+    "id": 53,
+    "category": "Line-Specific Trivia",
+    "title": "Bakerloo line portmanteau",
+    "fact": "The Bakerloo line got its name as a shortened mashup of its original two termini: Baker Street and Waterloo."
+  },
+  {
+    "id": 54,
+    "category": "Line-Specific Trivia",
+    "title": "Circle line isn't a circle anymore",
+    "fact": "In December 2009, the Circle line ceased to be a closed loop when it was extended in a spiral shape to Hammersmith."
+  },
+  {
+    "id": 55,
+    "category": "Line-Specific Trivia",
+    "title": "Victoria line driverless pioneers",
+    "fact": "When the Victoria line opened in 1968, it was the world's first full-scale automatic railway, where drivers only closed the doors and pressed a start button."
+  },
+  {
+    "id": 56,
+    "category": "Line-Specific Trivia",
+    "title": "Victoria line's original name ideas",
+    "fact": "Before settling on the Victoria line, planners seriously considered naming it the \"Walvic line\" (Walthamstow to Victoria) or the \"Viking line\" (Victoria to King's Cross)."
+  },
+  {
+    "id": 57,
+    "category": "Line-Specific Trivia",
+    "title": "Jubilee line's original Fleet name",
+    "fact": "The Jubilee line was originally planned as the Fleet line (named after the subterranean River Fleet), but was renamed in 1977 to mark Queen Elizabeth II's Silver Jubilee."
+  },
+  {
+    "id": 58,
+    "category": "Line-Specific Trivia",
+    "title": "Jubilee line platform screen doors",
+    "fact": "The Jubilee line extension stations between Westminster and North Greenwich were the first on the network to feature floor-to-ceiling glass platform screen doors."
+  },
+  {
+    "id": 59,
+    "category": "Line-Specific Trivia",
+    "title": "Northern line's Misery Line nickname",
+    "fact": "The Northern line earned the nickname \"The Misery Line\" in the 1980s and 1990s due to frequent delays and severe overcrowding."
+  },
+  {
+    "id": 60,
+    "category": "Line-Specific Trivia",
+    "title": "Northern line isn't the northernmost",
+    "fact": "Despite its name, the Northern line does not serve the northernmost stations on the network; the Metropolitan line reaches much further north into Hertfordshire and Buckinghamshire."
+  },
+  {
+    "id": 61,
+    "category": "Line-Specific Trivia",
+    "title": "Central line wooden tracks",
+    "fact": "Until 2003, parts of the Central line ran on jarrah wood sleepers imported from Australia, which gave off a distinctive smell when heated by train brakes."
+  },
+  {
+    "id": 62,
+    "category": "Line-Specific Trivia",
+    "title": "Piccadilly line Heathrow link",
+    "fact": "In 1977, the Piccadilly line became the first underground railway in the world to serve an airport directly when Heathrow Central (now Terminals 2 & 3) opened."
+  },
+  {
+    "id": 63,
+    "category": "Line-Specific Trivia",
+    "title": "Metropolitan line first-class carriages",
+    "fact": "The Metropolitan line offered first-class seating carriages right up until 1940."
+  },
+  {
+    "id": 64,
+    "category": "Line-Specific Trivia",
+    "title": "Metropolitan line freight trains",
+    "fact": "Unlike modern passenger-only Tube lines, the Metropolitan Railway once hauled coal, timber, milk, and even livestock into central London."
+  },
+  {
+    "id": 65,
+    "category": "Line-Specific Trivia",
+    "title": "District line's Wimbledon tennis link",
+    "fact": "Southfields station on the District line is redecorated in Wimbledon's signature purple and green colours every summer during the tennis championships."
+  },
+  {
+    "id": 66,
+    "category": "Architecture, Art & Design",
+    "title": "The iconic Roundel",
+    "fact": "The famous red circle and blue bar logo—known as the Roundel—was developed around 1908 from a solid red disc used to make station names stand out from advertisements."
+  },
+  {
+    "id": 67,
+    "category": "Architecture, Art & Design",
+    "title": "Leslie Green's oxblood tiles",
+    "fact": "Architect Leslie Green designed dozens of Edwardian Tube stations between 1903 and 1907 featuring distinctive blood-red (oxblood) glazed terracotta facades."
+  },
+  {
+    "id": 68,
+    "category": "Architecture, Art & Design",
+    "title": "Unique station tile patterns",
+    "fact": "Early Piccadilly, Bakerloo, and Northern line stations were each given unique wall tile patterns so illiterate passengers could recognise their stop by sight."
+  },
+  {
+    "id": 69,
+    "category": "Architecture, Art & Design",
+    "title": "Charles Holden's modernist stations",
+    "fact": "Architect Charles Holden redesigned the look of the Tube in the 1920s and 1930s with iconic brick, concrete, and glass modernist stations like Arnos Grove and Southgate."
+  },
+  {
+    "id": 70,
+    "category": "Architecture, Art & Design",
+    "title": "Southgate's flying saucer",
+    "fact": "Charles Holden's Grade II* listed Southgate station resembles a flying saucer topped with a Tesla-style illuminated spire."
+  },
+  {
+    "id": 71,
+    "category": "Architecture, Art & Design",
+    "title": "Gants Hill's Moscow Metro inspiration",
+    "fact": "Gants Hill station's vaulted pillared concourse was directly inspired by the grand underground palaces of the Moscow Metro."
+  },
+  {
+    "id": 72,
+    "category": "Architecture, Art & Design",
+    "title": "Tottenham Court Road mosaics",
+    "fact": "Pop artist Eduardo Paolozzi spent years creating the vibrant, intricate glass mosaics covering Tottenham Court Road's platforms and passageways in the 1980s."
+  },
+  {
+    "id": 73,
+    "category": "Architecture, Art & Design",
+    "title": "Alfred Hitchcock at Leytonstone",
+    "fact": "Leytonstone station features 17 mosaic panels celebrating scenes from the films of local-born director Alfred Hitchcock."
+  },
+  {
+    "id": 74,
+    "category": "Architecture, Art & Design",
+    "title": "Sherlock Holmes silhouettes",
+    "fact": "Baker Street's Jubilee line platforms are tiled with hundreds of tiny silhouettes of Sherlock Holmes's profile that combine to form a giant portrait."
+  },
+  {
+    "id": 75,
+    "category": "Architecture, Art & Design",
+    "title": "Labyrinth artworks at all 270 stations",
+    "fact": "In 2013, Turner Prize-winning artist Mark Wallinger installed a unique enamel labyrinth plaque in every single Underground station to mark the network's 150th anniversary."
+  },
+  {
+    "id": 76,
+    "category": "Architecture, Art & Design",
+    "title": "Poems on the Underground",
+    "fact": "Launched in 1986, Poems on the Underground displays classic and contemporary poetry inside Tube carriages instead of advertisements."
+  },
+  {
+    "id": 77,
+    "category": "Architecture, Art & Design",
+    "title": "Art on the Underground",
+    "fact": "TfL's official contemporary art programme commissions major works across stations and even designs custom covers for the pocket Tube map."
+  },
+  {
+    "id": 78,
+    "category": "Architecture, Art & Design",
+    "title": "Moquette seat fabric",
+    "fact": "Tube seats are upholstered in moquette—a dense wool-nylon pile fabric chosen because it hides wear, resists stains, and doesn't trap dust."
+  },
+  {
+    "id": 79,
+    "category": "Architecture, Art & Design",
+    "title": "Barman moquette pattern",
+    "fact": "One of the Underground's most famous seat patterns, \"Barman\", was designed in 2010 and subtly weaves silhouettes of London landmarks like St Paul's Cathedral and the London Eye into its geometric shapes."
+  },
+  {
+    "id": 80,
+    "category": "Architecture, Art & Design",
+    "title": "Harry Beck's meagre payment",
+    "fact": "Harry Beck was paid just 10 guineas (roughly £10.50 at the time) for his revolutionary 1933 Tube map design."
+  },
+  {
+    "id": 81,
+    "category": "Station Secrets & Oddities",
+    "title": "Dummy house at Leinster Gardens",
+    "fact": "Numbers 23 and 24 Leinster Gardens in Bayswater are fake five-foot-thick facades built in the 1860s to hide an open-air vent where steam trains let off smoke."
+  },
+  {
+    "id": 82,
+    "category": "Station Secrets & Oddities",
+    "title": "The coffin at Liverpool Street",
+    "fact": "Behind a wall at Liverpool Street station sits a forgotten bricked-up cavity housing the unclaimed coffin of an unknown 19th-century railway worker."
+  },
+  {
+    "id": 83,
+    "category": "Station Secrets & Oddities",
+    "title": "Covent Garden lift rule",
+    "fact": "Covent Garden has no escalators—only lifts and a 193-step emergency spiral staircase, which is equivalent to climbing a 15-storey building."
+  },
+  {
+    "id": 84,
+    "category": "Station Secrets & Oddities",
+    "title": "Arsenal's name change",
+    "fact": "Arsenal is the only Tube station named directly after a football club; it was renamed from Gillespie Road in 1932 after lobbying by legendary manager Herbert Chapman."
+  },
+  {
+    "id": 85,
+    "category": "Station Secrets & Oddities",
+    "title": "Charing Cross split heritage",
+    "fact": "Today's Charing Cross station was formed in 1979 by combining two separate stations: Trafalgar Square (Bakerloo line) and Strand (Northern line)."
+  },
+  {
+    "id": 86,
+    "category": "Station Secrets & Oddities",
+    "title": "Two Paddington stations",
+    "fact": "Paddington is actually two separate Underground stations on opposite sides of the mainline terminus—one serving the Bakerloo/District/Circle lines and another serving the Hammersmith & City/Circle lines."
+  },
+  {
+    "id": 87,
+    "category": "Station Secrets & Oddities",
+    "title": "Canary Wharf's cavernous scale",
+    "fact": "The Jubilee line station at Canary Wharf is so large that One Canada Square—London's iconic 235-metre skyscraper—could fit inside it lying on its side."
+  },
+  {
+    "id": 88,
+    "category": "Station Secrets & Oddities",
+    "title": "Westminster's concrete void",
+    "fact": "Westminster station has the deepest open void on the network, plunging 39 metres below street level with massive steel struts holding apart the surrounding earth."
+  },
+  {
+    "id": 89,
+    "category": "Station Secrets & Oddities",
+    "title": "King's Cross St. Pancras's six lines",
+    "fact": "King's Cross St. Pancras is the busiest interchange on the network, serving six Underground lines (Circle, Hammersmith & City, Metropolitan, Northern, Piccadilly, and Victoria)."
+  },
+  {
+    "id": 90,
+    "category": "Station Secrets & Oddities",
+    "title": "Smallest station entrance",
+    "fact": "Knightsbridge and St Paul's feature tiny sub-surface pavement entrances tucked straight into busy shopping streets."
+  },
+  {
+    "id": 91,
+    "category": "Station Secrets & Oddities",
+    "title": "Only station outside Greater London with Night Tube",
+    "fact": "Loughton and Epping in Essex are among the handful of London Underground stations located entirely outside Greater London."
+  },
+  {
+    "id": 92,
+    "category": "Station Secrets & Oddities",
+    "title": "Chesham's single platform",
+    "fact": "Chesham in Buckinghamshire is the furthest station from central London (25 miles away) and operates with just a single platform."
+  },
+  {
+    "id": 93,
+    "category": "Station Secrets & Oddities",
+    "title": "Vauxhall's royal connection",
+    "fact": "The area and station name Vauxhall comes from Falkes de Breauté, a 13th-century mercenary who owned \"Falkes' Hall\"."
+  },
+  {
+    "id": 94,
+    "category": "Station Secrets & Oddities",
+    "title": "Elephant & Castle's pub origin",
+    "fact": "Elephant & Castle station takes its unusual name from a local 18th-century coaching inn, whose sign bore an elephant carrying a castle."
+  },
+  {
+    "id": 95,
+    "category": "Station Secrets & Oddities",
+    "title": "Cockfosters' mysterious name",
+    "fact": "Cockfosters—the northern terminus of the Piccadilly line—likely derives from either \"cock forester\" (chief forester of Enfield Chase) or a local family home called Cockfosters."
+  },
+  {
+    "id": 96,
+    "category": "Engineering & Infrastructure",
+    "title": "London Clay advantage",
+    "fact": "Deep Tube lines were mostly built north of the Thames because London Clay is soft enough to tunnel through easily yet waterproof enough not to collapse."
+  },
+  {
+    "id": 97,
+    "category": "Engineering & Infrastructure",
+    "title": "Why the Tube gets so hot",
+    "fact": "Over more than a century of operation, the surrounding London Clay has absorbed train braking heat, warming from around 14°C in 1900 to nearly 25–30°C today."
+  },
+  {
+    "id": 98,
+    "category": "Engineering & Infrastructure",
+    "title": "Bunhill 2 waste heat scheme",
+    "fact": "Warm air vented from a Northern line shaft in Islington is captured and used to heat more than 1,350 local homes, a school, and a leisure centre."
+  },
+  {
+    "id": 99,
+    "category": "Engineering & Infrastructure",
+    "title": "Wooden escalators ban",
+    "fact": "All wooden-stepped escalators were progressively removed after the 1987 King's Cross fire; the very last one operated at Greenford until 2014."
+  },
+  {
+    "id": 100,
+    "category": "Engineering & Infrastructure",
+    "title": "Stand on the right rule",
+    "fact": "The etiquette of standing on the right side of escalators originated in 1911 at Earl's Court, where early escalators had a diagonal shunt at the top so passengers stepped off with their right foot."
+  },
+  {
+    "id": 101,
+    "category": "Engineering & Infrastructure",
+    "title": "The spiral escalator experiment",
+    "fact": "In 1906, Holloway Road station trialled an experimental curved spiral escalator, which failed within hours and still lies abandoned beneath the station."
+  },
+  {
+    "id": 102,
+    "category": "Engineering & Infrastructure",
+    "title": "Greasers on sharp curves",
+    "fact": "Automated trackside lubricators coat rails with grease on tight bends to stop the deafening screech of steel wheels grinding against steel track."
+  },
+  {
+    "id": 103,
+    "category": "Engineering & Infrastructure",
+    "title": "Sub-surface vs Deep-level trains",
+    "fact": "Sub-surface lines (Circle, District, Hammersmith & City, Metropolitan) use larger, boxy trains, while deep-level lines use rounded trains curved to fit circular 3.5-metre tunnels."
+  },
+  {
+    "id": 104,
+    "category": "Engineering & Infrastructure",
+    "title": "S Stock air conditioning",
+    "fact": "The S7 and S8 trains introduced on sub-surface lines in the 2010s were the first London Underground trains equipped with full air conditioning."
+  },
+  {
+    "id": 105,
+    "category": "Engineering & Infrastructure",
+    "title": "Regenerative braking",
+    "fact": "Modern Tube trains convert kinetic energy back into electricity when slowing down, feeding power back into the rails for other accelerating trains to use."
+  },
+  {
+    "id": 106,
+    "category": "Engineering & Infrastructure",
+    "title": "High-pressure water mist",
+    "fact": "Many deep stations use high-pressure water mist fire suppression systems that cool smoke and extinguish flames using a fraction of traditional sprinkler water."
+  },
+  {
+    "id": 107,
+    "category": "Engineering & Infrastructure",
+    "title": "Floodgates beneath the Thames",
+    "fact": "Heavy steel floodgates were installed at riverside stations like Waterloo and Embankment before WWII so tunnels could be sealed if bombs breached the Thames riverbed."
+  },
+  {
+    "id": 108,
+    "category": "Engineering & Infrastructure",
+    "title": "Nightly engineering window",
+    "fact": "Because passenger trains run roughly 20 hours a day, maintenance crews have fewer than four hours each night after traction current is switched off to inspect and repair tracks."
+  },
+  {
+    "id": 109,
+    "category": "Engineering & Infrastructure",
+    "title": "Rail grinding trains",
+    "fact": "Specialised overnight engineering trains travel the network grinding microscopic corrugations off the rails to keep rides smooth and quiet."
+  },
+  {
+    "id": 110,
+    "category": "Engineering & Infrastructure",
+    "title": "Leaf-fall sanders",
+    "fact": "Autumn leaves crushed onto outdoor rails create a slippery Teflon-like layer, so outdoor Tube trains carry onboard sand hoppers to spray grit onto tracks for grip."
+  },
+  {
+    "id": 111,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Licensed buskers",
+    "fact": "Launched in 2003, TfL's official busking scheme holds competitive auditions for dedicated pitches across central London stations."
+  },
+  {
+    "id": 112,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Famous former Tube buskers",
+    "fact": "Ed Sheeran, Rod Stewart, and Jessie J all busked on the London Underground early in their careers."
+  },
+  {
+    "id": 113,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Jerry Springer's Tube birth",
+    "fact": "American TV host Jerry Springer was born inside Highgate Tube station on 13 February 1944 while his mother was sheltering from a German air raid."
+  },
+  {
+    "id": 114,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Skyfall's Tube crash",
+    "fact": "The dramatic Tube train crash in the 2012 James Bond film Skyfall was filmed on a specially built set at Pinewood Studios, though real scenes were shot at Charing Cross's disused Jubilee platforms."
+  },
+  {
+    "id": 115,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Aldwych's Hollywood career",
+    "fact": "Closed in 1994, Aldwych ghost station is London's premier subterranean film set, appearing in Atonement, V for Vendetta, Sherlock, and The Prodigy's \"Firestarter\" music video."
+  },
+  {
+    "id": 116,
+    "category": "Culture, Film & Pop Culture",
+    "title": "An American Werewolf in London",
+    "fact": "The famous werewolf attack scene in the 1981 horror classic was filmed inside Tottenham Court Road station after hours."
+  },
+  {
+    "id": 117,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Sliding Doors",
+    "fact": "The 1998 romantic drama Sliding Doors revolves around a woman catching or missing a District line train at Waterloo station."
+  },
+  {
+    "id": 118,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Underground Monopoly",
+    "fact": "While standard London Monopoly uses mainline railway stations, TfL has released official London Underground editions replacing streets with Tube stations."
+  },
+  {
+    "id": 119,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Mornington Crescent game",
+    "fact": "The BBC Radio 4 comedy panel show I'm Sorry I Haven't a Clue popularised \"Mornington Crescent\", a nonsensical strategy game played by calling out Tube station names."
+  },
+  {
+    "id": 120,
+    "category": "Culture, Film & Pop Culture",
+    "title": "The Tube Challenge",
+    "fact": "The Guinness World Record \"Tube Challenge\" involves visiting every single London Underground station in the fastest possible time using only public transport and walking."
+  },
+  {
+    "id": 121,
+    "category": "Culture, Film & Pop Culture",
+    "title": "Fastest Tube Challenge time",
+    "fact": "The verified Guinness World Record for visiting all 272 stations stands at just over 15 hours and 45 minutes."
+  },
+  {
+    "id": 122,
+    "category": "Culture, Film & Pop Culture",
+    "title": "The Mail Rail cousin",
+    "fact": "Until 2003, the Post Office operated its own driverless miniature underground railway beneath London between Paddington and Whitechapel to move mailbags."
+  },
+  {
+    "id": 123,
+    "category": "Passenger Stats & Operations",
+    "title": "Daily passenger numbers",
+    "fact": "On a typical weekday, the London Underground handles up to 4 to 5 million passenger journeys."
+  },
+  {
+    "id": 124,
+    "category": "Passenger Stats & Operations",
+    "title": "Annual ridership",
+    "fact": "More than 1.1 to 1.3 billion journeys are made on the Underground each year."
+  },
+  {
+    "id": 125,
+    "category": "Passenger Stats & Operations",
+    "title": "Most common lost property",
+    "fact": "Umbrellas, mobile phones, wallets, backpacks, and keys top TfL's lost property list, alongside bizarre items like prosthetic legs, a coffin, and a samurai sword."
+  },
+  {
+    "id": 126,
+    "category": "Passenger Stats & Operations",
+    "title": "Baker Street Lost Property Office",
+    "fact": "For decades, TfL's central Lost Property Office operated out of Baker Street, processing over 300,000 misplaced items annually before relocating to Pelham Street."
+  },
+  {
+    "id": 127,
+    "category": "Passenger Stats & Operations",
+    "title": "Dogs on escalators",
+    "fact": "London Underground bylaws require passengers to carry dogs on escalators so their paws and fur don't get caught in the moving combs."
+  },
+  {
+    "id": 128,
+    "category": "Passenger Stats & Operations",
+    "title": "Service dogs trained on the Tube",
+    "fact": "Guide Dogs for the Blind regularly trains puppies inside Tube stations and on trains to desensitise them to crowds, announcements, and tunnel noise."
+  },
+  {
+    "id": 129,
+    "category": "Passenger Stats & Operations",
+    "title": "Night Tube launch",
+    "fact": "The 24-hour weekend Night Tube launched in August 2016 on the Central and Victoria lines before expanding to the Jubilee, Northern, and Piccadilly lines."
+  },
+  {
+    "id": 130,
+    "category": "Passenger Stats & Operations",
+    "title": "First female Tube train driver",
+    "fact": "Hannah Dadds became the London Underground's first female train driver in 1978, driving District line trains."
+  },
+  {
+    "id": 131,
+    "category": "Passenger Stats & Operations",
+    "title": "First female station manager",
+    "fact": "Edna Adkins became the first female station master on the Underground during the First World War when women stepped into railway roles."
+  },
+  {
+    "id": 132,
+    "category": "Passenger Stats & Operations",
+    "title": "Station cats",
+    "fact": "In the early 20th century, several Underground stations officially employed station cats to keep rodent populations under control."
+  },
+  {
+    "id": 133,
+    "category": "Passenger Stats & Operations",
+    "title": "Quiet carriages myth",
+    "fact": "Unlike some national rail services, the London Underground has never designated quiet carriages—though Londoners famously maintain an unspoken rule of silence."
+  },
+  {
+    "id": 134,
+    "category": "Passenger Stats & Operations",
+    "title": "Free travel for guide dogs",
+    "fact": "Assistance dogs travel completely free on all London Underground services, and ordinary pet dogs are also permitted without a ticket."
+  },
+  {
+    "id": 135,
+    "category": "Passenger Stats & Operations",
+    "title": "Christmas Day shutdown",
+    "fact": "Christmas Day is the only day of the year when the entire London Underground network completely shuts down."
+  },
+  {
+    "id": 136,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Only station with 'Q' or 'Z'",
+    "fact": "No London Underground station name contains the letter Q, though several—such as Queensway and Kentish Town—contain K, and Belsize Park contains Z."
+  },
+  {
+    "id": 137,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Longest station name",
+    "fact": "Heathrow Terminals 1, 2, 3 (now Terminals 2 & 3) and High Street Kensington tie among the longest station names on the network."
+  },
+  {
+    "id": 138,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Shortest station names",
+    "fact": "Bank, Bow Road's neighbour Mile End, and Oval (4 letters) are among the shortest station names, with Bank and Oval tied at four letters."
+  },
+  {
+    "id": 139,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "The 'Street' stations",
+    "fact": "Over a dozen Tube stations end in the word \"Street\", including Oxford Street's neighbour Bond Street, Baker Street, Liverpool Street, and Old Street."
+  },
+  {
+    "id": 140,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Unusual plant species on embankments",
+    "fact": "Botanists have discovered rare orchids and non-native plants flourishing along Tube embankments, originally carried in as seeds on Victorian freight trains."
+  },
+  {
+    "id": 141,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Roman London beneath the tracks",
+    "fact": "Digging tunnels and stations has uncovered thousands of Roman artefacts, including a Roman temple of Mithras near Bank and ancient mosaic floors."
+  },
+  {
+    "id": 142,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Ice Age fossils",
+    "fact": "During Jubilee line excavations in the 1990s, engineers unearthed Ice Age woolly mammoth and bison bones beneath central London."
+  },
+  {
+    "id": 143,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "The original 'Mind the Gap' actor",
+    "fact": "Sound engineer Peter Lodge recorded the first 1968 \"Mind the Gap\" announcement himself after the hired actor demanded royalties for repeated playback."
+  },
+  {
+    "id": 144,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Emma Clarke's voice",
+    "fact": "Voiceover artist Emma Clarke voiced the famous \"Mind the gap\" and \"Please stand clear of the closing doors\" announcements across several lines for nearly a decade."
+  },
+  {
+    "id": 145,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Oyster card's name origin",
+    "fact": "The Oyster card was named after the proverb \"the world is your oyster\" and the protective shell guarding a valuable pearl inside."
+  },
+  {
+    "id": 146,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "1966 World Cup special",
+    "fact": "During the 1966 FIFA World Cup, Wembley Park station handled massive crowds heading to the final at Wembley Stadium."
+  },
+  {
+    "id": 147,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "London 2012 Olympics record",
+    "fact": "During the 2012 London Olympic Games, the Underground carried a record 4.4 million passengers in a single day on 3 August 2012."
+  },
+  {
+    "id": 148,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "All Night Long on opening day",
+    "fact": "On 10 January 1863, the Metropolitan Railway carried 38,000 passengers on its very first day, running trains from 6 a.m. until midnight."
+  },
+  {
+    "id": 149,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Prime Minister Gladstone's first ride",
+    "fact": "Future Prime Minister William Gladstone rode in an open-top carriage on the Metropolitan Railway's ceremonial inaugural run in January 1863."
+  },
+  {
+    "id": 150,
+    "category": "Quirky Trivia & Wildlife",
+    "title": "Battersea Power Station extension",
+    "fact": "Opened in September 2021, Nine Elms and Battersea Power Station on the Northern line were the first brand-new Tube stations added to the network in the 21st century."
+  }
+]
