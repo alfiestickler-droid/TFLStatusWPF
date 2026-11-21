@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-        
+
         <Grid>
 
             <Rectangle Stroke="Black" 
@@ -316,6 +316,22 @@
                 </Expander>
 
             </StackPanel>
+
+            <ScrollViewer Width="200" 
+              Height="100" 
+              VerticalAlignment="Top" 
+              HorizontalAlignment="Right" 
+              Margin="0,125,97,0" 
+              VerticalScrollBarVisibility="Auto" 
+              HorizontalScrollBarVisibility="Disabled"
+              Background="#FFDEDAB5">
+                <TextBlock x:Name="RndFact" 
+               Text="" 
+               Foreground="Black" 
+               TextWrapping="Wrap" 
+               TextAlignment="Center"
+               Padding="5"/>
+            </ScrollViewer>
 
         </Grid>
     </ScrollViewer>

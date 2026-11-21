@@ -59,7 +59,7 @@ namespace TFLStatusWPF
 
         private void Button_FactClick(object sender, RoutedEventArgs e)
         {
-            
+            RndFact.Text = TubeFacts.GetRandomFact();
         }
     }
 }

@@ -12,22 +12,30 @@ namespace TFLStatusWPF
             [property: JsonPropertyName("id")] int Id,
             [property: JsonPropertyName("catagory")] string Catagory,
             [property: JsonPropertyName("title")] string Title,
-            [property: JsonPropertyName("fact")] int Fact
+            [property: JsonPropertyName("fact")] string Fact
             );
     public class TubeFacts
     {
-        private readonly List<TubeFact> facts;
+        private static readonly List<TubeFact> facts;
 
-        public TubeFacts(string filePath = "london_underground_facts-v2.json")
+        static TubeFacts()
         {
-            string json = File.ReadAllText(filePath);
-            facts = JsonSerializer.Deserialize<List<TubeFact>>(json) ?? [];
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "london_underground_facts-v2.json");
+            if (File.Exists(filePath))
+            {
+                string json = File.ReadAllText(filePath);
+                facts = JsonSerializer.Deserialize<List<TubeFact>>(json) ?? [];
+            }
+            else
+            {
+                facts = [];
+            }
         }
 
-        public string GetRandomFact()
+        public static string GetRandomFact()
         {
             if (facts.Count == 0)
-                return "No facts avalible";
+                return "No facts available";
 
             TubeFact randomFact = facts[Random.Shared.Next(facts.Count)];
             return $"{randomFact.Title}: \n{randomFact.Fact}";
