@@ -56,5 +56,10 @@ namespace TFLStatusWPF
             VictoriaReason.Text = lineReason[9];
             WaterlooAndCityReason.Text = lineReason[10];
         }
+
+        private void Button_FactClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
