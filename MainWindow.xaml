@@ -320,8 +320,8 @@
             <ScrollViewer Width="200" 
               Height="100" 
               VerticalAlignment="Top" 
-              HorizontalAlignment="Right" 
-              Margin="0,125,97,0" 
+              HorizontalAlignment="Left" 
+              Margin="502,125,0,0" 
               VerticalScrollBarVisibility="Auto" 
               HorizontalScrollBarVisibility="Disabled"
               Background="#FFDEDAB5">
