@@ -6,82 +6,234 @@
         xmlns:local="clr-namespace:TFLStatusWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid>
+
         <Button Content="Get Status" 
                 HorizontalAlignment="Left" 
                 Margin="38,23,0,0" 
                 VerticalAlignment="Top"
                 Click="Button_Click"
-                Name="RefreshBttn"/>
+                Name="RefreshBttn"
+                Cursor="Hand"/>
 
-        <Label Name="BakerlooStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,57,0,0"/>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,57,0,0">
 
-        <Label Name="CentralStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,77,0,0"/>
-
-        <Label Name="CircleStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,97,0,0"/>
-
-        <Label Name="DistrictStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,117,0,0"/>
-
-        <Label Name="HammersmithAndCityStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,137,0,0"/>
-
-        <Label Name="JubileeStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,157,0,0"/>
-
-        <Label Name="MetropolitanStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,177,0,0"/>
-
-        <Label Name="NorthernStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,197,0,0"/>
-
-        <Label Name="PiccadillyStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,217,0,0"/>
-
-        <Label Name="VictoriaStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,237,0,0"/>
-
-        <Label Name="WaterlooAndCityStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,257,0,0"/>
+            <Label Name="BakerlooStatus"
+               Content=""/>
 
 
-        
+            <Expander MaxHeight="100" 
+          Name="Bakerloo"
+          Header="More Info" 
+          Width="300"
+          Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#b26300">
+                        <TextBlock Name="BakerlooReason"
+                              Text=""
+                              TextWrapping="Wrap"
+                              Foreground="White"
+                              Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="CentralStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+                      Name="Central"
+                      Header="More Info" 
+                      Width="300"
+                      Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#DC241F">
+                        <TextBlock Name="CentralReason"
+                    Text=""
+                    TextWrapping="Wrap"
+                    Foreground="White"
+                    Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="CircleStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+          Name="Circle"
+          Header="More Info" 
+          Width="300"
+          Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#ffd329">
+                        <TextBlock Name="CircleReason"
+                                   Text=""
+                                   TextWrapping="Wrap"
+                                   Foreground="Black"
+                                   Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="DistrictStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+          Name="District"
+          Header="More Info" 
+          Width="300"
+          Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#007d32">
+                        <TextBlock Name="DistrictReason"
+                                   Text=""
+                                   TextWrapping="Wrap"
+                                   Foreground="White"
+                                   Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="HammersmithAndCityStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+          Name="HammersmithAndCity"
+          Header="More Info" 
+          Width="300"
+          Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#f4a9be">
+                        <TextBlock Name="HammersmithAndCityReason"
+                                   Text=""
+                                   TextWrapping="Wrap"
+                                   Foreground="White"
+                                   Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="JubileeStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+          Name="Jubilee"
+          Header="More Info" 
+          Width="300"
+          Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#a1a5a7">
+                        <TextBlock Name="JubileeReason"
+                                   Text=""
+                                   TextWrapping="Wrap"
+                                   Foreground="White"
+                                   Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="MetropolitanStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+          Name="Metropolitan"
+          Header="More Info" 
+          Width="300"
+          Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#9b0058">
+                        <TextBlock Name="MetropolitanReason"
+                                   Text=""
+                                   TextWrapping="Wrap"
+                                   Foreground="White"
+                                   Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="NorthernStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+                      Name="Northern"
+                      Header="More Info" 
+                      Width="300"
+                      Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#000000">
+                        <TextBlock Name="NorthernReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="PiccadillyStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+                      Name="Piccadilly"
+                      Header="More Info" 
+                      Width="300"
+                      Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#0019a8">
+                        <TextBlock Name="PiccadillyReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="VictoriaStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+                      Name="Victoria"
+                      Header="More Info" 
+                      Width="300"
+                      Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#0098d8">
+                        <TextBlock Name="VictoriaReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label Name="WaterlooAndCityStatus"
+               Content=""/>
+
+            <Expander MaxHeight="100" 
+                      Name="WaterlooAndCity"
+                      Header="More Info" 
+                      Width="300"
+                      Cursor="Hand">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#93ceba">
+                        <TextBlock Name="WaterlooAndCityReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+        </StackPanel>
+
+
+
 
     </Grid>
+    </ScrollViewer>
 </Window>

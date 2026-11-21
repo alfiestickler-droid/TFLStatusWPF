@@ -50,6 +50,52 @@ namespace TFLStatusWPF.Tfl_updates
             }
         }
 
+
+        public static async Task<List<string>?> TFLTubeDescriptions() // When using async use task instead of void.
+        {
+            using var client = new HttpClient();
+            client.DefaultRequestHeaders.Add("User-Agent", "CSharpApp");
+
+            string url = "https://api.tfl.gov.uk/Line/Mode/tube/Status";
+
+            try
+            {
+
+
+                // Fetch and automatically deserialize the JSON into C# objects
+                var lines = await client.GetFromJsonAsync<List<TubeLine>>(url);
+
+                var reason = new List<string>();
+
+                if (lines != null)
+                {
+                    foreach (var line in lines)
+                    {
+                        var status = line.LineStatuses?.FirstOrDefault();
+
+                        if (!string.IsNullOrEmpty(status?.Reason))
+                        {
+                            var descriptions = line.LineStatuses
+                                .Select(s => s.Reason)
+                                .Where(desc => !string.IsNullOrEmpty(desc));
+
+                            reason.Add($"{string.Join(", ", descriptions)}");
+                        }
+                        else
+                        {
+                            reason.Add("Line has good service.");
+                        }
+                    }
+                }
+                return reason;
+            }
+            catch (Exception ex)
+            {
+                //todo show error
+                return null;
+            }
+        }
+
     }
 
     
