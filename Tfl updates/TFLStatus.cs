@@ -10,30 +10,8 @@ namespace TFLStatusWPF.Tfl_updates
 {
     public static class TFLTubeInfo
     {
-        public static async Task<List<TubeLine>?> TFLTubeNames() // When using async use task instead of void.
-        {
-            using var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("User-Agent", "CSharpApp");
 
-            string url = "https://api.tfl.gov.uk/Line/Mode/tube/Status";
-
-            try
-            {
-
-
-                // Fetch and automatically deserialize the JSON into C# objects
-                return await client.GetFromJsonAsync<List<TubeLine>>(url);
-
-                
-            }
-            catch (Exception ex)
-            {
-                //todo show error
-                return null;
-            }
-        }
-
-        public static async Task<List<string>?> TFLTubeStatus()
+        public static async Task<List<string>?> TFLTubeStatus() // When using async use task instead of void.
         {
             using var client = new HttpClient();
             client.DefaultRequestHeaders.Add("User-Agent", "CSharpApp");

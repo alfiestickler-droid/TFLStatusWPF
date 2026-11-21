@@ -29,19 +29,19 @@ namespace TFLStatusWPF
             List<TubeLine>? tubeLines = await TFLTubeInfo.TFLTubeNames();
             List<string>? lineStatus = await TFLTubeInfo.TFLTubeStatus();
 
-            Bakerloo.Content = tubeLines[0].Name;
-            Central.Content = tubeLines[1].Name;
-            Circle.Content = tubeLines[2].Name;
-            District.Content = tubeLines[3].Name;
-            HammersmithAndCity.Content = tubeLines[4].Name;
-            Jubilee.Content = tubeLines[5].Name;
-            Metropolitan.Content = tubeLines[6].Name;
-            Northern.Content = tubeLines[7].Name;
-            Piccadilly.Content = tubeLines[8].Name;
-            Victoria.Content = tubeLines[9].Name;
-            WaterlooAndCity.Content = tubeLines[10].Name;
 
             BakerlooStatus.Content = lineStatus[0];
+            CentralStatus.Content = lineStatus[1];
+            CircleStatus.Content = lineStatus[2];
+            DistrictStatus.Content = lineStatus[3];
+            HammersmithAndCityStatus.Content = lineStatus[4];
+            JubileeStatus.Content = lineStatus[5];
+            MetropolitanStatus.Content = lineStatus[6];
+            NorthernStatus.Content = lineStatus[7];
+            PiccadillyStatus.Content = lineStatus[8];
+            VictoriaStatus.Content = lineStatus[9];
+            WaterlooAndCityStatus.Content = lineStatus[10];
+
 
 
         }

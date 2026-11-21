@@ -14,78 +14,74 @@
                 Click="Button_Click"
                 Name="RefreshBttn"/>
 
-        <Label Name="Bakerloo"
+        <Label Name="BakerlooStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,57,0,0"/>
 
-        <Label Name="Central"
+        <Label Name="CentralStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,77,0,0"/>
 
-        <Label Name="Circle"
+        <Label Name="CircleStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,97,0,0"/>
 
-        <Label Name="District"
+        <Label Name="DistrictStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,117,0,0"/>
 
-        <Label Name="HammersmithAndCity"
+        <Label Name="HammersmithAndCityStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,137,0,0"/>
 
-        <Label Name="Jubilee"
+        <Label Name="JubileeStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,157,0,0"/>
 
-        <Label Name="Metropolitan"
+        <Label Name="MetropolitanStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,177,0,0"/>
 
-        <Label Name="Northern"
+        <Label Name="NorthernStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,197,0,0"/>
 
-        <Label Name="Piccadilly"
+        <Label Name="PiccadillyStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,217,0,0"/>
 
-        <Label Name="Victoria"
+        <Label Name="VictoriaStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,237,0,0"/>
 
-        <Label Name="WaterlooAndCity"
+        <Label Name="WaterlooAndCityStatus"
                Content=""
                HorizontalAlignment="Left"
                VerticalAlignment="Top" 
                Margin="38,257,0,0"/>
 
 
-        <Label Name="BakerlooStatus"
-               Content=""
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top" 
-               Margin="38,57,0,0"/>
+        
 
     </Grid>
 </Window>
