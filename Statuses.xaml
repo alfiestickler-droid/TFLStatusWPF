@@ -1,0 +1,303 @@
+﻿<Page x:Class="TFLStatusWPF.Statuses"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TFLStatusWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Statuses">
+
+    <Grid>
+        <!--Background-->
+        <Rectangle x:Name="background" 
+                   Fill="#FFA4A4A4"/>
+
+        <Ellipse Width="75" 
+                     Height="75" 
+                     Fill="#DC241F"
+                     VerticalAlignment="Top"
+                     HorizontalAlignment="Center"
+                     Margin="0,110,0,0"/>
+<!--Get Status Button-->
+        <Ellipse Width="50" 
+                     Height="50" 
+                     Fill="White"
+                     VerticalAlignment="Top"
+                     HorizontalAlignment="Center"
+                     Margin="0,122,0,0"/>
+
+        <Button
+                Content="Get Status" 
+                HorizontalAlignment="Center" 
+                Margin="0,135,0,0" 
+                VerticalAlignment="Top"
+                Click="Button_Click"
+                x:Name="RefreshBttn"
+                Width="100"
+                Height="20"
+                
+                Cursor="Hand" 
+                    Background="#FF1C3F94" Foreground="White" 
+                    FontWeight="Bold"/>
+
+        <!-- Tube Statuses -->
+        <StackPanel HorizontalAlignment="Center" 
+                    VerticalAlignment="Top" 
+                    Margin="0,210,0,0"
+               x:Name="StatusBox"
+                    Visibility="Hidden">
+
+            <Label x:Name="BakerlooStatus"
+     Content=""
+     Background="#FFB26300" Foreground="White"/>
+
+
+            <Expander MaxHeight="100" 
+                x:Name="Bakerloo"
+                Header="More Info" 
+                Width="300"
+                Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#b26300">
+                        <TextBlock x:Name="BakerlooReason"
+                    Text=""
+                    TextWrapping="Wrap"
+                    Foreground="White"
+                    Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="CentralStatus"
+     Content=""
+         Background="#DC241F" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+            x:Name="Central"
+            Header="More Info" 
+            Width="300"
+            Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#DC241F">
+                        <TextBlock x:Name="CentralReason"
+          Text=""
+          TextWrapping="Wrap"
+          Foreground="White"
+          Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="CircleStatus"
+     Content=""
+         Background="#ffd329" Foreground="Black"/>
+
+            <Expander MaxHeight="100" 
+x:Name="Circle"
+Header="More Info" 
+Width="300"
+Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#ffd329">
+                        <TextBlock x:Name="CircleReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="Black"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="DistrictStatus"
+     Content=""
+         Background="#007d32" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+x:Name="District"
+Header="More Info" 
+Width="300"
+Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#007d32">
+                        <TextBlock x:Name="DistrictReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="HammersmithAndCityStatus"
+     Content=""
+         Background="#f4a9be" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+x:Name="HammersmithAndCity"
+Header="More Info" 
+Width="300"
+Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#f4a9be">
+                        <TextBlock x:Name="HammersmithAndCityReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="JubileeStatus"
+     Content=""
+         Background="#a1a5a7" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+x:Name="Jubilee"
+Header="More Info" 
+Width="300"
+Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#a1a5a7">
+                        <TextBlock x:Name="JubileeReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="MetropolitanStatus"
+     Content=""
+         Background="#9b0058" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+x:Name="Metropolitan"
+Header="More Info" 
+Width="300"
+Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#9b0058">
+                        <TextBlock x:Name="MetropolitanReason"
+                         Text=""
+                         TextWrapping="Wrap"
+                         Foreground="White"
+                         Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="NorthernStatus"
+     Content=""
+         Background="#000000" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+            x:Name="Northern"
+            Header="More Info" 
+            Width="300"
+            Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#000000">
+                        <TextBlock x:Name="NorthernReason"
+               Text=""
+               TextWrapping="Wrap"
+               Foreground="White"
+               Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="PiccadillyStatus"
+     Content=""
+         Background="#0019a8" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+            x:Name="Piccadilly"
+            Header="More Info" 
+            Width="300"
+            Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#0019a8">
+                        <TextBlock x:Name="PiccadillyReason"
+               Text=""
+               TextWrapping="Wrap"
+               Foreground="White"
+               Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="VictoriaStatus"
+     Content=""
+         Background="#0098d8" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+            x:Name="Victoria"
+            Header="More Info" 
+            Width="300"
+            Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#0098d8">
+                        <TextBlock x:Name="VictoriaReason"
+               Text=""
+               TextWrapping="Wrap"
+               Foreground="White"
+               Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+            <Label x:Name="WaterlooAndCityStatus"
+     Content=""
+         Background="#93ceba" Foreground="White"/>
+
+            <Expander MaxHeight="100" 
+            x:Name="WaterlooAndCity"
+            Header="More Info" 
+            Width="300"
+            Cursor="Hand"
+                Background="#0ac4d1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Background="#93ceba">
+                        <TextBlock x:Name="WaterlooAndCityReason"
+               Text=""
+               TextWrapping="Wrap"
+               Foreground="White"
+               Margin="10"/>
+                    </Grid>
+                </ScrollViewer>
+            </Expander>
+
+        </StackPanel>
+        
+<!--Title-->
+        <Rectangle x:Name="TitleBox"
+           Height="100"
+           Fill="#FF353432"
+           VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="Title"
+       Text="Underground App"
+       Height="40"
+       Width="300"
+           VerticalAlignment="Top"
+           Margin="0,28,0,0" 
+           TextAlignment="Center" 
+           FontWeight="DemiBold" 
+           FontSize="24" 
+           Background="#FF717171" 
+           Foreground="White"/>
+    </Grid>
+</Page>
