@@ -42,12 +42,36 @@
                     Background="#FF1C3F94" Foreground="White" 
                     FontWeight="Bold"/>
 
+
+        <Rectangle x:Name="LeftBlock"
+                   Width="240"
+                   Height="100"
+                   Margin="0,100,0,0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Fill="#454544"/>
+
+        <Rectangle x:Name="BehindStatusBlock"
+                   Width="240"
+                   Height="100"
+           Margin="0,100,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+           Fill="#454544"/>
+
+        <Rectangle x:Name="RightBlock"
+   Width="320"
+           Margin="0,200,0,0"
+           Fill="#454544"/>
+
         <!-- Tube Statuses -->
         <StackPanel HorizontalAlignment="Center" 
                     VerticalAlignment="Top" 
-                    Margin="0,210,0,0"
+                    Margin="0,220,0,20"
                x:Name="StatusBox"
                     Visibility="Hidden">
+
+            
 
             <Label x:Name="BakerlooStatus"
      Content=""
