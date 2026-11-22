@@ -26,6 +26,8 @@ namespace TFLStatusWPF
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            StatusBox.Visibility = Visibility.Visible;
             
             List<string>? lineStatus = await TFLTubeInfo.TFLTubeStatus();
             List<string>? lineReason = await TFLTubeInfo.TFLTubeDescriptions();
@@ -59,6 +61,7 @@ namespace TFLStatusWPF
 
         private void Button_FactClick(object sender, RoutedEventArgs e)
         {
+            FactBox.Visibility = Visibility.Visible;
             RndFact.Text = TubeFacts.GetRandomFact();
         }
     }

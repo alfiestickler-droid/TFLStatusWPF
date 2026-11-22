@@ -10,17 +10,17 @@
 
         <Grid>
 
-            <Rectangle Stroke="Black" 
+            <Rectangle 
                        Width="400"
                        VerticalAlignment="Stretch"
                        HorizontalAlignment="Left"
-                       Fill="#345494"/>
+                       Fill="#FFC8C8C8"/>
 
-            <Rectangle Stroke="Black" 
+            <Rectangle  
            Width="400"
            VerticalAlignment="Stretch"
            HorizontalAlignment="Left"
-           Fill="#0ac4d1"
+           Fill="#FF868686"
                        Margin="400,0,0,0"/>
 
             <Ellipse Width="75" 
@@ -28,19 +28,19 @@
                      Fill="#DC241F"
                      VerticalAlignment="Top"
                      HorizontalAlignment="Left"
-                     Margin="155,15,0,0"/>
+                     Margin="155,110,0,0"/>
 
             <Ellipse Width="50" 
                      Height="50" 
                      Fill="White"
                      VerticalAlignment="Top"
                      HorizontalAlignment="Left"
-                     Margin="167,27,0,0"/>
+                     Margin="167,122,0,0"/>
 
             <Button
                 Content="Get Status" 
                 HorizontalAlignment="Left" 
-                Margin="142,40,0,0" 
+                Margin="142,135,0,0" 
                 VerticalAlignment="Top"
                 Click="Button_Click"
                 x:Name="RefreshBttn"
@@ -56,19 +56,19 @@
          Fill="#DC241F"
          VerticalAlignment="Top"
          HorizontalAlignment="Left"
-         Margin="565,15,0,0"/>
+         Margin="565,110,0,0"/>
 
             <Ellipse Width="50" 
          Height="50" 
          Fill="White"
          VerticalAlignment="Top"
          HorizontalAlignment="Left"
-         Margin="577,27,0,0"/>
+         Margin="577,122,0,0"/>
 
             <Button
     Content="Get Fact" 
     HorizontalAlignment="Left" 
-    Margin="552,40,0,0" 
+    Margin="552,135,0,0" 
     VerticalAlignment="Top"
     Click="Button_FactClick"
     x:Name="GetFact"
@@ -81,7 +81,8 @@
 
 
 
-            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,100,0,0">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,210,0,0"
+                        Visibility="Collapsed" x:Name="StatusBox">
 
                 <Label x:Name="BakerlooStatus"
                Content=""
@@ -321,10 +322,12 @@
               Height="100" 
               VerticalAlignment="Top" 
               HorizontalAlignment="Left" 
-              Margin="502,125,0,0" 
+              Margin="502,225,0,0" 
               VerticalScrollBarVisibility="Auto" 
               HorizontalScrollBarVisibility="Disabled"
-              Background="#FFDEDAB5">
+              Background="#FFDEDAB5"
+                          Visibility="Collapsed"
+                          x:Name="FactBox">
                 <TextBlock x:Name="RndFact" 
                Text="" 
                Foreground="Black" 
@@ -332,6 +335,23 @@
                TextAlignment="Center"
                Padding="5"/>
             </ScrollViewer>
+
+            <Rectangle x:Name="TitleBox"
+                       Height="100"
+                       Fill="#FF353432"
+                       VerticalAlignment="Top"/>
+
+            <TextBlock x:Name="Title"
+                   Text="Underground App"
+                   Height="40"
+                   Width="300"
+                       VerticalAlignment="Top"
+                       Margin="0,28,0,0" 
+                       TextAlignment="Center" 
+                       FontWeight="DemiBold" 
+                       FontSize="24" 
+                       Background="#FF717171" 
+                       Foreground="White"/>
 
         </Grid>
     </ScrollViewer>
