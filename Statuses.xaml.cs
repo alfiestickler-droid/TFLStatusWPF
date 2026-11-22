@@ -59,5 +59,15 @@ namespace TFLStatusWPF
             VictoriaReason.Text = lineReason[9];
             WaterlooAndCityReason.Text = lineReason[10];
         }
+
+        //Home Button
+
+        private void Button_HomeClick(object sender, RoutedEventArgs e)
+        {
+            if (this.NavigationService != null)
+            {
+                this.NavigationService.Content = null;
+            }
+        }
     }
 }

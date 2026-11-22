@@ -1,0 +1,114 @@
+﻿<Page x:Class="TFLStatusWPF.Facts"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TFLStatusWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Facts">
+
+    <Grid>
+        <!--Background-->
+        <Rectangle x:Name="background" 
+                   Fill="#FFA4A4A4"/>
+
+        <!--Title-->
+        <Rectangle x:Name="TitleBox"
+           Height="100"
+           Fill="#FF353432"
+           VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="Title"
+       Text="Underground App"
+       Height="40"
+       Width="300"
+           VerticalAlignment="Top"
+           Margin="0,28,0,0" 
+           TextAlignment="Center" 
+           FontWeight="DemiBold" 
+           FontSize="24" 
+           Background="#FF717171" 
+           Foreground="White"/>
+        
+
+        <!--Home Button-->
+        <Ellipse Width="75" 
+         Height="75" 
+         Fill="#DC241F"
+         VerticalAlignment="Top"
+         HorizontalAlignment="Left"
+         Margin="65,15,0,0"/>
+
+        <Ellipse Width="50" 
+         Height="50" 
+         Fill="White"
+         VerticalAlignment="Top"
+         HorizontalAlignment="Left"
+         Margin="77,27,0,0"/>
+
+        <Button
+    Content="Home" 
+    HorizontalAlignment="Left" 
+    Margin="52,40,0,0" 
+    VerticalAlignment="Top"
+    Click="Button_HomeClick"
+    x:Name="Home"
+    Width="100"
+    Height="20"
+    
+    Cursor="Hand" 
+        Background="#FF1C3F94" Foreground="White" 
+        FontWeight="Bold"/>
+
+        <Ellipse Width="75" 
+     Height="75" 
+     Fill="#DC241F"
+     VerticalAlignment="Top"
+     HorizontalAlignment="Center"
+     Margin="0,110,0,0"/>
+
+        <Ellipse Width="50" 
+     Height="50" 
+     Fill="White"
+     VerticalAlignment="Top"
+     HorizontalAlignment="Center"
+     Margin="0,122,0,0"/>
+
+        <Button
+Content="Get Fact" 
+HorizontalAlignment="Center" 
+Margin="0,135,0,0" 
+VerticalAlignment="Top"
+Click="Button_FactClick"
+x:Name="GetFact"
+Width="100"
+Height="20"
+
+Cursor="Hand" 
+    Background="#FF1C3F94" Foreground="White" 
+    FontWeight="Bold"/>
+
+        <!--Fact box-->
+
+        <ScrollViewer Width="200" 
+  Height="100" 
+  VerticalAlignment="Top" 
+  HorizontalAlignment="Center" 
+  Margin="0,225,0,0" 
+  VerticalScrollBarVisibility="Auto" 
+  HorizontalScrollBarVisibility="Disabled"
+  Background="#FFDEDAB5"
+              Visibility="Collapsed"
+              x:Name="FactBox">
+            <TextBlock x:Name="RndFact" 
+   Text="" 
+   Foreground="Black" 
+   TextWrapping="Wrap" 
+   TextAlignment="Center"
+   Padding="5"/>
+        </ScrollViewer>
+
+        
+    </Grid>
+</Page>

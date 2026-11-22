@@ -12,14 +12,15 @@
         <!--Background-->
         <Rectangle x:Name="background" 
                    Fill="#FFA4A4A4"/>
-
+        
+        <!--Get Status Button-->
         <Ellipse Width="75" 
                      Height="75" 
                      Fill="#DC241F"
                      VerticalAlignment="Top"
                      HorizontalAlignment="Center"
                      Margin="0,110,0,0"/>
-<!--Get Status Button-->
+
         <Ellipse Width="50" 
                      Height="50" 
                      Fill="White"
@@ -299,5 +300,34 @@ Cursor="Hand"
            FontSize="24" 
            Background="#FF717171" 
            Foreground="White"/>
+
+        <!--Home Button-->
+        <Ellipse Width="75" 
+         Height="75" 
+         Fill="#DC241F"
+         VerticalAlignment="Top"
+         HorizontalAlignment="Left"
+         Margin="65,15,0,0"/>
+
+        <Ellipse Width="50" 
+         Height="50" 
+         Fill="White"
+         VerticalAlignment="Top"
+         HorizontalAlignment="Left"
+         Margin="77,27,0,0"/>
+
+        <Button
+    Content="Home" 
+    HorizontalAlignment="Left" 
+    Margin="52,40,0,0" 
+    VerticalAlignment="Top"
+    Click="Button_HomeClick"
+    x:Name="Home"
+    Width="100"
+    Height="20"
+    
+    Cursor="Hand" 
+        Background="#FF1C3F94" Foreground="White" 
+        FontWeight="Bold"/>
     </Grid>
 </Page>

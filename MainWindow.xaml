@@ -38,7 +38,7 @@
                      Margin="167,122,0,0"/>
 
             <Button
-                Content="Get Status" 
+                Content="Line Statuses" 
                 HorizontalAlignment="Left" 
                 Margin="142,135,0,0" 
                 VerticalAlignment="Top"
@@ -66,11 +66,11 @@
          Margin="577,122,0,0"/>
 
             <Button
-    Content="Get Fact" 
+    Content="Facts" 
     HorizontalAlignment="Left" 
     Margin="552,135,0,0" 
     VerticalAlignment="Top"
-    Click="Button_FactClick"
+    Click="Button_FactsPageClick"
     x:Name="GetFact"
     Width="100"
     Height="20"

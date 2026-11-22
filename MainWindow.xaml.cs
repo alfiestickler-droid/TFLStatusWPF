@@ -31,11 +31,10 @@ namespace TFLStatusWPF
         }
 
 
-        //Get Fact Button
-        private void Button_FactClick(object sender, RoutedEventArgs e)
+        //Get Fact Page Button
+        private void Button_FactsPageClick(object sender, RoutedEventArgs e)
         {
-            FactBox.Visibility = Visibility.Visible;
-            RndFact.Text = TubeFacts.GetRandomFact();
+            GetStatusPage.Navigate(new Facts());
         }
     }
 }
