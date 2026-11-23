@@ -36,5 +36,10 @@ namespace TFLStatusWPF
         {
             GetStatusPage.Navigate(new Facts());
         }
+
+        private void Button_JourneyPlannerPageClick(object sender, RoutedEventArgs e)
+        {
+            GetStatusPage.Navigate(new JourneyPlannerPage());
+        }
     }
 }

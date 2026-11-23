@@ -1,0 +1,89 @@
+﻿<Page x:Class="TFLStatusWPF.JourneyPlannerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TFLStatusWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="JourneyPlannerPage">
+
+    
+    <Grid>
+        
+        
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle x:Name="background" 
+           Fill="#FFA4A4A4" Grid.RowSpan="3"/>
+
+        <!--station select and search-->
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    Margin="30,150,0,15">
+
+            <ComboBox x:Name="FromStationSelect"
+                      Width="180"
+                      Margin="0,0,10,0"
+                      DisplayMemberPath="Name"
+                      SelectedValuePath="Id"/>
+
+            <ComboBox x:Name="ToStationSelect"
+                      Width="180"
+                      Margin="0,0,10,0"
+                      DisplayMemberPath="Name"
+                      SelectedValuePath="Id"/>
+
+            <Button x:Name="PlanButton"
+                    Content="Plan Journey"
+                    Width="110"
+                    Click="PlanButton_Click"/>
+
+        </StackPanel>
+<!--Journey Summary-->
+        <TextBlock x:Name="SummaryTextBlock"
+                   Grid.Row="1"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Margin="0,0,0,10"/>
+<!--Step by step instructions-->
+        <ListBox x:Name="StepsListBox" 
+                 Grid.Row="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="0,5">
+                        <TextBlock Text="{Binding instruction.summary}"
+                                   FontWeight="SemiBold"/>
+                        <TextBlock Text="{Binding instruction.detailed}"
+                                   Foreground="Gray"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            
+        </ListBox>
+
+        <Rectangle x:Name="TitleBox"
+           Height="100"
+           Fill="#FF353432"
+           VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="Title"
+       Text="Underground App"
+       Height="40"
+       Width="300"
+           VerticalAlignment="Top"
+           Margin="0,28,0,0" 
+           TextAlignment="Center" 
+           FontWeight="DemiBold" 
+           FontSize="24" 
+           Background="#FF717171" 
+           Foreground="White"/>
+
+    </Grid>
+</Page>

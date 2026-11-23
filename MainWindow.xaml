@@ -79,27 +79,37 @@
         Background="#FF1C3F94" Foreground="White" 
         FontWeight="Bold"/>
 
-            
-            <!--Fact box-->
 
-            <ScrollViewer Width="200" 
-              Height="100" 
-              VerticalAlignment="Top" 
-              HorizontalAlignment="Left" 
-              Margin="502,225,0,0" 
-              VerticalScrollBarVisibility="Auto" 
-              HorizontalScrollBarVisibility="Disabled"
-              Background="#FFDEDAB5"
-                          Visibility="Collapsed"
-                          x:Name="FactBox">
-                <TextBlock x:Name="RndFact" 
-               Text="" 
-               Foreground="Black" 
-               TextWrapping="Wrap" 
-               TextAlignment="Center"
-               Padding="5"/>
-            </ScrollViewer>
+            <Ellipse Width="75" 
+     Height="75" 
+     Fill="#DC241F"
+     VerticalAlignment="Top"
+     HorizontalAlignment="Left"
+     Margin="364,110,0,0"/>
 
+            <Ellipse Width="50" 
+     Height="50" 
+     Fill="White"
+     VerticalAlignment="Top"
+     HorizontalAlignment="Left"
+     Margin="376,122,0,0"/>
+
+            <Button
+Content="Journey Planner" 
+HorizontalAlignment="Left" 
+Margin="351,135,0,0" 
+VerticalAlignment="Top"
+Click="Button_JourneyPlannerPageClick"
+x:Name="JourneyPlanner"
+Width="100"
+Height="20"
+
+Cursor="Hand" 
+    Background="#FF1C3F94" Foreground="White" 
+    FontWeight="Bold"/>
+
+
+<!--title-->
             <Rectangle x:Name="TitleBox"
                        Height="100"
                        Fill="#FF353432"

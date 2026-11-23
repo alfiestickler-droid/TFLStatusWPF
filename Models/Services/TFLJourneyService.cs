@@ -29,7 +29,23 @@ namespace TFLStatusWPF.Models.Services
                     PropertyNameCaseInsensitive=true
                 };
 
-                return JsonSerializer.Deserialize<JourneyResponse>(jsonResponse, options);
+                var data = JsonSerializer.Deserialize<TflStopPointResponse>(jsonResponse, options);
+
+                if (data?.StopPoints == null)
+                    return new List<StationItem>();
+
+                return data.StopPoints
+                    .Where(s => s.StopType == "NaptanMetroStation")
+                    .Select(s => new StationItem
+                    {
+                        Id = s.NaptanId,
+                        Name = s.CommonName.Replace(" Underground Station", "").Trim()
+                    })
+
+                    .GroupBy(s => s.Name)
+                    .Select(g => g.First())
+                    .OrderBy(s => s.Name)
+                    .ToList();
             }
             catch (HttpRequestException ex)
             {
