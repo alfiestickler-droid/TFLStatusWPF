@@ -38,12 +38,12 @@ namespace TFLStatusWPF
             PlanButton.IsEnabled = false;
             SummaryTextBlock.Text = "Loading stations...";
 
-            List<StationItem> stations = await _journeyService.GetStationsAsync();
+            _allStations = await _journeyService.GetStationsAsync();
 
-            if (stations.Count > 0)
+            if (_allStations.Count > 0)
             {
-                FromStationSelect.ItemsSource = stations;
-                ToStationSelect.ItemsSource = stations;
+                FromStationSelect.ItemsSource = _allStations;
+                ToStationSelect.ItemsSource = _allStations;
                 SummaryTextBlock.Text = "";
             }
             else
@@ -51,6 +51,37 @@ namespace TFLStatusWPF
                 SummaryTextBlock.Text = "Could not load stations. Check your internet or API key";
             }
             PlanButton.IsEnabled = true;
+        }
+
+        // Filters whichever ComboBox the user is currently typing into
+        private void StationComboBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (sender is not ComboBox comboBox) return;
+
+            // If the user just clicked an item from the dropdown, don't re-filter
+            if (comboBox.SelectedItem is StationItem selected && selected.Name == comboBox.Text)
+                return;
+
+            string searchText = comboBox.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                comboBox.ItemsSource = _allStations;
+                    
+            }
+            else
+            {
+                comboBox.ItemsSource = _allStations
+                    .Where(s => s.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            comboBox.IsDropDownOpen = true;
+
+            if (comboBox.Template.FindName("PART_EditableTextBox", comboBox) is TextBox textBox)
+            {
+                textBox.CaretIndex = textBox.Text.Length;
+            }
         }
 
         /*private void LoadSampleStations()
@@ -101,6 +132,14 @@ namespace TFLStatusWPF
             }
 
             PlanButton.IsEnabled = true;
+        }
+
+        private void Button_HomeClick(object sender, RoutedEventArgs e)
+        {
+            if (this.NavigationService != null)
+            {
+                this.NavigationService.Content = null;
+            }
         }
     }
 }
