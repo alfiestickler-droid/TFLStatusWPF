@@ -31,13 +31,21 @@
                       Width="180"
                       Margin="0,0,10,0"
                       DisplayMemberPath="Name"
-                      SelectedValuePath="Id"/>
+                      SelectedValuePath="Id"
+                      IsEditable="True"
+                      IsTextSearchEnabled="False"
+                      StaysOpenOnEdit="True"
+                      TextBoxBase.TextChanged="StationComboBox_TextChanged"/>
 
             <ComboBox x:Name="ToStationSelect"
                       Width="180"
                       Margin="0,0,10,0"
                       DisplayMemberPath="Name"
-                      SelectedValuePath="Id"/>
+                      SelectedValuePath="Id"
+                      IsEditable="True"
+                      IsTextSearchEnabled="False"
+                      StaysOpenOnEdit="True"
+                      TextBoxBase.TextChanged="StationComboBox_TextChanged"/>
 
             <Button x:Name="PlanButton"
                     Content="Plan Journey"

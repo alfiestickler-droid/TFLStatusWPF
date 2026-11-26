@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 using TFLStatusWPF.Models;
 using TFLStatusWPF.Models.Services;
 
@@ -23,13 +24,36 @@ namespace TFLStatusWPF
 
         private readonly TFLJourneyService _journeyService = new TFLJourneyService();
 
+        private List<StationItem> _allStations = new List<StationItem>();
+
         public JourneyPlannerPage()
         {
             InitializeComponent();
-            LoadSampleStations();
+            //LoadSampleStations();
+            LoadAllStationsAsync();
         }
 
-        private void LoadSampleStations()
+        private async void LoadAllStationsAsync()
+        {
+            PlanButton.IsEnabled = false;
+            SummaryTextBlock.Text = "Loading stations...";
+
+            List<StationItem> stations = await _journeyService.GetStationsAsync();
+
+            if (stations.Count > 0)
+            {
+                FromStationSelect.ItemsSource = stations;
+                ToStationSelect.ItemsSource = stations;
+                SummaryTextBlock.Text = "";
+            }
+            else
+            {
+                SummaryTextBlock.Text = "Could not load stations. Check your internet or API key";
+            }
+            PlanButton.IsEnabled = true;
+        }
+
+        /*private void LoadSampleStations()
         {
             var stations = new List<StationItem>
             {
@@ -42,7 +66,7 @@ namespace TFLStatusWPF
 
             FromStationSelect.ItemsSource = stations;
             ToStationSelect.ItemsSource = stations;
-        }
+        }*/
 
         private async void PlanButton_Click(object sender, RoutedEventArgs e)
         {
