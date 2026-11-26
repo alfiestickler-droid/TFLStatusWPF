@@ -11,36 +11,43 @@
         <Grid>
 
             <Rectangle 
-                       Width="400"
+                       Width="267"
                        VerticalAlignment="Stretch"
                        HorizontalAlignment="Left"
                        Fill="#FFC8C8C8"/>
 
             <Rectangle  
-           Width="400"
+           Width="267"
            VerticalAlignment="Stretch"
            HorizontalAlignment="Left"
            Fill="#FF868686"
-                       Margin="400,0,0,0"/>
+                       Margin="267,0,0,0"/>
+
+            <Rectangle  
+            Width="267"
+            VerticalAlignment="Stretch"
+            HorizontalAlignment="Left"
+            Fill="#403f3d"
+            Margin="534,0,0,0"/>
 
             <Ellipse Width="75" 
                      Height="75" 
                      Fill="#DC241F"
                      VerticalAlignment="Top"
                      HorizontalAlignment="Left"
-                     Margin="155,110,0,0"/>
+                     Margin="83,110,0,0"/>
 
             <Ellipse Width="50" 
                      Height="50" 
                      Fill="White"
                      VerticalAlignment="Top"
                      HorizontalAlignment="Left"
-                     Margin="167,122,0,0"/>
+                     Margin="95,122,0,0"/>
 
             <Button
                 Content="Line Statuses" 
                 HorizontalAlignment="Left" 
-                Margin="142,135,0,0" 
+                Margin="70,135,0,0" 
                 VerticalAlignment="Top"
                 Click="Button_StatusPageClick"
                 x:Name="StatusPageButton"
@@ -56,19 +63,19 @@
          Fill="#DC241F"
          VerticalAlignment="Top"
          HorizontalAlignment="Left"
-         Margin="565,110,0,0"/>
+         Margin="639,110,0,0"/>
 
             <Ellipse Width="50" 
          Height="50" 
          Fill="White"
          VerticalAlignment="Top"
          HorizontalAlignment="Left"
-         Margin="577,122,0,0"/>
+         Margin="651,122,0,0"/>
 
             <Button
     Content="Facts" 
     HorizontalAlignment="Left" 
-    Margin="552,135,0,0" 
+    Margin="627,135,0,0" 
     VerticalAlignment="Top"
     Click="Button_FactsPageClick"
     x:Name="GetFact"
