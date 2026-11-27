@@ -8,350 +8,355 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Statuses">
 
-    <Grid>
-        <!--Background-->
-        <Rectangle x:Name="background" 
-                   Fill="#FFA4A4A4"/>
-        
-        <!--Get Status Button-->
-        <Ellipse Width="75" 
-                     Height="75" 
-                     Fill="#DC241F"
-                     VerticalAlignment="Top"
-                     HorizontalAlignment="Center"
-                     Margin="0,110,0,0"/>
+    <Grid Background="#FFA4A4A4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <Ellipse Width="50" 
-                     Height="50" 
-                     Fill="White"
-                     VerticalAlignment="Top"
-                     HorizontalAlignment="Center"
-                     Margin="0,122,0,0"/>
+        <Grid Grid.Row="0" Background="#FF353432">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
 
-        <Button
-                Content="Get Status" 
-                HorizontalAlignment="Center" 
-                Margin="0,135,0,0" 
-                VerticalAlignment="Top"
-                Click="Button_Click"
-                x:Name="RefreshBttn"
-                Width="100"
-                Height="20"
+            <Grid Grid.Column="0" Width="150" VerticalAlignment="Center">
+                <!--Home Button-->
+                <Ellipse Width="75" 
+                         Height="75" 
+                         Fill="#DC241F"/>
+
+                <Ellipse Width="50" 
+                         Height="50" 
+                         Fill="White"/>
+
+                <Button Content="Home" 
+                        Click="Button_HomeClick"
+                        x:Name="Home"
+                        Width="100"
+                        Height="20"
+                        Cursor="Hand"
+                        Background="#FF1C3F94" Foreground="White" 
+                        FontWeight="Bold"/>
+            </Grid>
+
+            <!--Title-->
+            <Border Grid.Column="1"
+                    Background="#FF717171"
+                    Height="40"
+                    MaxWidth="350"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
+                    Margin="10, 0">
                 
-                Cursor="Hand" 
-                    Background="#FF1C3F94" Foreground="White" 
-                    FontWeight="Bold"/>
+            <TextBlock x:Name="Title"
+                       Text="Underground App"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center"
+                       FontWeight="DemiBold"
+                       FontSize="24"
+                       Foreground="White"/>
+
+            </Border>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="320"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle x:Name="BehindStatusBlock"
+                       Grid.Column="0"
+                       Fill="#454544"/>
+            <Rectangle x:Name="LeftBlock"
+                       Grid.Column="2"
+                       Fill="#454544"/>
+
+            <Grid Grid.Column="1"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Center">
+                <!--Get Status Button-->
+                <Ellipse Width="75" 
+                         Height="75" 
+                         Fill="#DC241F"/>
 
 
-        <Rectangle x:Name="LeftBlock"
-                   Width="240"
-                   Height="100"
-                   Margin="0,100,0,0"
-                   HorizontalAlignment="Right"
-                   VerticalAlignment="Top"
-                   Fill="#454544"/>
+                <Ellipse Width="50" 
+                         Height="50" 
+                         Fill="White"/>
 
-        <Rectangle x:Name="BehindStatusBlock"
-                   Width="240"
-                   Height="100"
-           Margin="0,100,0,0"
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Top"
-           Fill="#454544"/>
+                <Button Content="Get Status" 
+                        Click="Button_Click"
+                        x:Name="RefreshBttn"
+                        Width="100"
+                        Height="20"
+                        Cursor="Hand" 
+                        Background="#FF1C3F94" 
+                        Foreground="White" 
+                        FontWeight="Bold"/>
 
-        <Rectangle x:Name="RightBlock"
-   Width="320"
-           Margin="0,200,0,0"
-           Fill="#454544"/>
-
-        <!-- Tube Statuses -->
-        <StackPanel HorizontalAlignment="Center" 
-                    VerticalAlignment="Top" 
-                    Margin="0,220,0,20"
-               x:Name="StatusBox"
-                    Visibility="Hidden">
-
+            </Grid>
             
+        </Grid>
 
-            <Label x:Name="BakerlooStatus"
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="320"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle x:Name="RightBlock"
+                       Grid.Column="1"
+                       Fill="#454544"/>
+
+            <!-- Tube Statuses -->
+            <ScrollViewer Grid.Column="1"
+                          VerticalScrollBarVisibility="Auto"
+                          Padding="10, 15">
+                <StackPanel x:Name="StatusBox"
+                        Visibility="Hidden">
+
+                    <Label x:Name="BakerlooStatus"
      Content=""
      Background="#FFB26300" Foreground="White"/>
 
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
                 x:Name="Bakerloo"
                 Header="More Info" 
                 Width="300"
                 Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#b26300">
-                        <TextBlock x:Name="BakerlooReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#b26300">
+                                <TextBlock x:Name="BakerlooReason"
                     Text=""
                     TextWrapping="Wrap"
                     Foreground="White"
                     Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="CentralStatus"
+                    <Label x:Name="CentralStatus"
      Content=""
          Background="#DC241F" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
             x:Name="Central"
             Header="More Info" 
             Width="300"
             Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#DC241F">
-                        <TextBlock x:Name="CentralReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#DC241F">
+                                <TextBlock x:Name="CentralReason"
           Text=""
           TextWrapping="Wrap"
           Foreground="White"
           Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="CircleStatus"
+                    <Label x:Name="CircleStatus"
      Content=""
          Background="#ffd329" Foreground="Black"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
 x:Name="Circle"
 Header="More Info" 
 Width="300"
 Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#ffd329">
-                        <TextBlock x:Name="CircleReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#ffd329">
+                                <TextBlock x:Name="CircleReason"
                          Text=""
                          TextWrapping="Wrap"
                          Foreground="Black"
                          Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="DistrictStatus"
+                    <Label x:Name="DistrictStatus"
      Content=""
          Background="#007d32" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
 x:Name="District"
 Header="More Info" 
 Width="300"
 Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#007d32">
-                        <TextBlock x:Name="DistrictReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#007d32">
+                                <TextBlock x:Name="DistrictReason"
                          Text=""
                          TextWrapping="Wrap"
                          Foreground="White"
                          Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="HammersmithAndCityStatus"
+                    <Label x:Name="HammersmithAndCityStatus"
      Content=""
          Background="#f4a9be" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
 x:Name="HammersmithAndCity"
 Header="More Info" 
 Width="300"
 Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#f4a9be">
-                        <TextBlock x:Name="HammersmithAndCityReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#f4a9be">
+                                <TextBlock x:Name="HammersmithAndCityReason"
                          Text=""
                          TextWrapping="Wrap"
                          Foreground="White"
                          Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="JubileeStatus"
+                    <Label x:Name="JubileeStatus"
      Content=""
          Background="#a1a5a7" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
 x:Name="Jubilee"
 Header="More Info" 
 Width="300"
 Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#a1a5a7">
-                        <TextBlock x:Name="JubileeReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#a1a5a7">
+                                <TextBlock x:Name="JubileeReason"
                          Text=""
                          TextWrapping="Wrap"
                          Foreground="White"
                          Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="MetropolitanStatus"
+                    <Label x:Name="MetropolitanStatus"
      Content=""
          Background="#9b0058" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
 x:Name="Metropolitan"
 Header="More Info" 
 Width="300"
 Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#9b0058">
-                        <TextBlock x:Name="MetropolitanReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#9b0058">
+                                <TextBlock x:Name="MetropolitanReason"
                          Text=""
                          TextWrapping="Wrap"
                          Foreground="White"
                          Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="NorthernStatus"
+                    <Label x:Name="NorthernStatus"
      Content=""
          Background="#000000" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
             x:Name="Northern"
             Header="More Info" 
             Width="300"
             Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#000000">
-                        <TextBlock x:Name="NorthernReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#000000">
+                                <TextBlock x:Name="NorthernReason"
                Text=""
                TextWrapping="Wrap"
                Foreground="White"
                Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="PiccadillyStatus"
+                    <Label x:Name="PiccadillyStatus"
      Content=""
          Background="#0019a8" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
             x:Name="Piccadilly"
             Header="More Info" 
             Width="300"
             Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#0019a8">
-                        <TextBlock x:Name="PiccadillyReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#0019a8">
+                                <TextBlock x:Name="PiccadillyReason"
                Text=""
                TextWrapping="Wrap"
                Foreground="White"
                Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="VictoriaStatus"
+                    <Label x:Name="VictoriaStatus"
      Content=""
          Background="#0098d8" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
             x:Name="Victoria"
             Header="More Info" 
             Width="300"
             Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#0098d8">
-                        <TextBlock x:Name="VictoriaReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#0098d8">
+                                <TextBlock x:Name="VictoriaReason"
                Text=""
                TextWrapping="Wrap"
                Foreground="White"
                Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-            <Label x:Name="WaterlooAndCityStatus"
+                    <Label x:Name="WaterlooAndCityStatus"
      Content=""
          Background="#93ceba" Foreground="White"/>
 
-            <Expander MaxHeight="100" 
+                    <Expander MaxHeight="100" 
             x:Name="WaterlooAndCity"
             Header="More Info" 
             Width="300"
             Cursor="Hand"
                 Background="#0ac4d1">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <Grid Background="#93ceba">
-                        <TextBlock x:Name="WaterlooAndCityReason"
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <Grid Background="#93ceba">
+                                <TextBlock x:Name="WaterlooAndCityReason"
                Text=""
                TextWrapping="Wrap"
                Foreground="White"
                Margin="10"/>
-                    </Grid>
-                </ScrollViewer>
-            </Expander>
+                            </Grid>
+                        </ScrollViewer>
+                    </Expander>
 
-        </StackPanel>
-        
-<!--Title-->
-        <Rectangle x:Name="TitleBox"
-           Height="100"
-           Fill="#FF353432"
-           VerticalAlignment="Top"/>
+                </StackPanel>
+            </ScrollViewer>
 
-        <TextBlock x:Name="Title"
-       Text="Underground App"
-       Height="40"
-       Width="300"
-           VerticalAlignment="Top"
-           Margin="0,28,0,0" 
-           TextAlignment="Center" 
-           FontWeight="DemiBold" 
-           FontSize="24" 
-           Background="#FF717171" 
-           Foreground="White"/>
-
-        <!--Home Button-->
-        <Ellipse Width="75" 
-         Height="75" 
-         Fill="#DC241F"
-         VerticalAlignment="Top"
-         HorizontalAlignment="Left"
-         Margin="65,15,0,0"/>
-
-        <Ellipse Width="50" 
-         Height="50" 
-         Fill="White"
-         VerticalAlignment="Top"
-         HorizontalAlignment="Left"
-         Margin="77,27,0,0"/>
-
-        <Button
-    Content="Home" 
-    HorizontalAlignment="Left" 
-    Margin="52,40,0,0" 
-    VerticalAlignment="Top"
-    Click="Button_HomeClick"
-    x:Name="Home"
-    Width="100"
-    Height="20"
-    
-    Cursor="Hand" 
-        Background="#FF1C3F94" Foreground="White" 
-        FontWeight="Bold"/>
+        </Grid>
     </Grid>
 </Page>
